@@ -1,0 +1,104 @@
+html{
+	font-family: "Avenir Next", Helevetica, sans-serif;
+	text-align: center;
+	background:url('./images/flag_2.jpg') repeat #e1f0f6;
+}
+
+body {
+	margin: 0 auto;
+	font:14px/1.3 'Open Sans Condensed', sans-serif;
+} 
+
+h1, h2 {
+	font-weight: 300;
+}
+header h1{
+	text-align:center;
+	font: normal 52px 'Playball', cursive;
+	color:#ffff;
+	padding-top:60px;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.1);
+}
+
+body h1,h2,h3{
+	text-align:center;
+	color:#ffff;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.1);
+}
+
+table{
+	position:absolute;
+	margin-left:25%;
+	width:50%;
+	border-collapse: collapse;
+}
+
+
+tr:nth-child(odd) {
+	background-color: #037FB0;
+	}
+th {
+    background-color: #C93942;
+    color: #ffff;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+	color: #ffff;
+	 padding: 1%;
+    text-align: left;
+	
+}
+
+
+/*tablet styling*/
+
+@media screen and (max-width: 768px){
+	table{
+	width:100%;	
+	}
+}
+
+@media screen and (max-width: 1024px){
+	table{
+	width:100%;	
+	margin-left:0;
+	}
+	header h1{
+	font: normal 40px 'Playball', cursive;
+	padding-top:5px;
+	}
+	th, td {
+    padding: 5px;
+	font-size:25px;
+    }
+	body h1,h2,h3{
+	font-size:25px;
+   }
+}
+
+/*mobile Styling*/
+@media screen and (max-width: 414px){
+	
+	#icon,#conditionsDesc,#temp{
+		display:none;
+	}
+}
+@media screen and (max-width: 320px){
+	header h1{
+	font: normal 30px 'Playball', cursive;
+	padding-top:5px;
+	}
+	body h1,h2,h3{
+	font-size:15px;
+   }
+	table{
+	width:55%;
+    margin-left:3%;	
+	}
+	th, td {
+    padding: 5px;
+	font-size:11.5px;
+    }
+	
+}
